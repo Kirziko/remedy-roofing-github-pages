@@ -24,3 +24,21 @@ section,
 footer {
   max-width: 100%;
 }
+
+/* Keep the homepage hero CTA centered like the original design. */
+body > section:first-of-type [data-bss-parallax-bg] .row > div {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+body > section:first-of-type [data-bss-parallax-bg] .text-center {
+  width: 100%;
+  text-align: center !important;
+}
+
+body > section:first-of-type [data-bss-parallax-bg] .btn {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
