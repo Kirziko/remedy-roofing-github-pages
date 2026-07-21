@@ -88,9 +88,17 @@ function gtag_report_conversion(url) {
     <link rel="stylesheet" href="assets/css/aos.min.min.css">
     <link rel="stylesheet" href="assets/css/animate.min.min.css">
     <style>
+        body > section:first-of-type [data-bss-parallax-bg] .container,
+        body > section:first-of-type [data-bss-parallax-bg] .row {
+            height: 100% !important;
+            min-height: 100% !important;
+        }
+
         body > section:first-of-type [data-bss-parallax-bg] .row > div {
             display: flex !important;
+            flex-direction: column !important;
             flex: 0 0 100% !important;
+            min-height: 100% !important;
             width: 100% !important;
             max-width: 100% !important;
             margin-left: 0 !important;

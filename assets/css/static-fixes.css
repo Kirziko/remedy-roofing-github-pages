@@ -39,9 +39,17 @@ footer {
 }
 
 /* Keep the homepage hero CTA centered like the original design. */
+body > section:first-of-type [data-bss-parallax-bg] .container,
+body > section:first-of-type [data-bss-parallax-bg] .row {
+  height: 100% !important;
+  min-height: 100% !important;
+}
+
 body > section:first-of-type [data-bss-parallax-bg] .row > div {
   display: flex !important;
+  flex-direction: column !important;
   flex: 0 0 100% !important;
+  min-height: 100% !important;
   width: 100% !important;
   max-width: 100% !important;
   margin-left: 0 !important;
