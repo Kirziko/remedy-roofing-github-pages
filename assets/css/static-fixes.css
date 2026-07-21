@@ -1,0 +1,26 @@
+/*
+  Static hosting fixes.
+  The original site references AOS/animation CSS files that are not available
+  from the source server. Without the AOS stylesheet, the JavaScript leaves
+  elements translated off-screen, which creates horizontal overflow on GitHub
+  Pages. Keep the content visible and aligned.
+*/
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+[data-aos],
+[data-aos].aos-init,
+[data-aos].aos-animate {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+.navbar,
+section,
+footer {
+  max-width: 100%;
+}
