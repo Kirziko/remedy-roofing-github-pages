@@ -72,6 +72,11 @@ body > section:first-of-type [data-bss-parallax-bg] .btn {
   max-width: 1200px;
 }
 
+.rr-testimonial-grid > .col {
+  align-items: stretch;
+  display: flex;
+}
+
 .rr-testimonial-card {
   align-items: stretch;
   background:
@@ -83,7 +88,8 @@ body > section:first-of-type [data-bss-parallax-bg] .btn {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 260px;
+  height: 100%;
+  min-height: 330px;
   padding: clamp(1.25rem, 2.3vw, 1.9rem);
   position: relative;
   width: 100%;
@@ -137,6 +143,12 @@ body > section:first-of-type [data-bss-parallax-bg] .btn {
   padding: 0.85rem 1.25rem;
   text-decoration: none;
   transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.rr-google-review-wrap {
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .rr-google-review-card:hover,
@@ -217,7 +229,7 @@ body > section:first-of-type [data-bss-parallax-bg] .btn {
 
 @media (max-width: 991.98px) {
   .rr-testimonial-card {
-    min-height: auto;
+    min-height: 260px;
   }
 }
 
