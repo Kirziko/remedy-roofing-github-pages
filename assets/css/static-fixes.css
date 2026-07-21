@@ -238,3 +238,125 @@ body > section:first-of-type [data-bss-parallax-bg] .btn {
     animation: none;
   }
 }
+
+.rr-footer-top {
+  align-items: stretch;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(190px, 0.85fr) minmax(280px, 1.35fr) minmax(240px, 1fr);
+}
+
+.rr-footer-card {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(255, 147, 30, 0.24);
+  border-radius: 24px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: center;
+  min-height: 190px;
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.rr-footer-services {
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.rr-footer-services h3 {
+  color: #181c20;
+  font-family: Ubuntu, sans-serif;
+  font-size: clamp(1.35rem, 2vw, 1.9rem);
+  font-weight: 900;
+  margin: 0 0 0.75rem;
+}
+
+.rr-footer-services nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.rr-footer-services a {
+  background: rgba(255, 147, 30, 0.13);
+  border: 1px solid rgba(255, 147, 30, 0.28);
+  border-radius: 999px;
+  color: #181c20;
+  font-family: Ubuntu, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 800;
+  padding: 0.35rem 0.75rem;
+  text-decoration: none;
+  transition: background-color 160ms ease, color 160ms ease, transform 160ms ease;
+}
+
+.rr-footer-services a:hover,
+.rr-footer-services a:focus {
+  background: #ff931e;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.rr-footer-credentials {
+  gap: 1.25rem;
+}
+
+.rr-credential-link {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-width: 0;
+}
+
+.rr-credential-link img {
+  display: block;
+  height: auto;
+  max-height: 118px;
+  max-width: min(210px, 100%);
+  object-fit: contain;
+}
+
+.rr-footer-brand {
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.rr-footer-brand img {
+  display: block;
+  height: auto;
+  max-width: 190px;
+  width: 100%;
+}
+
+.rr-footer-brand p {
+  color: #181c20;
+  font-family: Ubuntu, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.45;
+  margin: 0;
+}
+
+@media (max-width: 991.98px) {
+  .rr-footer-top {
+    grid-template-columns: 1fr;
+  }
+
+  .rr-footer-services {
+    align-items: center;
+    text-align: center;
+  }
+
+  .rr-footer-services nav {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .rr-footer-credentials {
+    flex-direction: column;
+  }
+}
