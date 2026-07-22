@@ -162,13 +162,115 @@ function gtag_report_conversion(url) {
             }
         }
     </style>
+
+    <style id="rr-mobile-header-sync">
+        .rr-mobile-phone {
+            display: none !important;
+        }
+
+        @media (max-width: 767.98px) {
+            body {
+                padding-top: 71px !important;
+            }
+
+            .navbar.sticky-top {
+                position: fixed !important;
+            }
+
+            .navbar > .container {
+                flex-wrap: nowrap !important;
+                gap: 0.4rem !important;
+            }
+
+            .navbar-brand {
+                flex-shrink: 1 !important;
+                margin-right: auto !important;
+                min-width: 0 !important;
+            }
+
+            .navbar-brand img {
+                height: auto !important;
+                max-width: 125px !important;
+                width: 100% !important;
+            }
+
+            .rr-desktop-phone {
+                display: none !important;
+            }
+
+            .rr-mobile-phone {
+                align-items: center !important;
+                border-radius: 0 !important;
+                color: #ffffff !important;
+                display: inline-flex !important;
+                flex-shrink: 0 !important;
+                font-family: Bungee, serif !important;
+                font-size: clamp(0.95rem, 4vw, 1.08rem) !important;
+                font-weight: bold !important;
+                justify-content: center !important;
+                line-height: 1 !important;
+                margin: 0 !important;
+                padding: 0.55rem 0.5rem !important;
+                white-space: nowrap !important;
+            }
+
+            .rr-mobile-phone:visited,
+            .rr-mobile-phone:hover,
+            .rr-mobile-phone:focus,
+            .rr-mobile-phone:active {
+                color: #ffffff !important;
+            }
+
+            .rr-mobile-nav-toggle {
+                align-items: center !important;
+                background: #ff931e !important;
+                display: inline-flex !important;
+                flex-direction: column !important;
+                flex-shrink: 0 !important;
+                gap: 4px !important;
+                height: 36px !important;
+                justify-content: center !important;
+                overflow: hidden !important;
+                padding: 0 !important;
+                width: 40px !important;
+            }
+
+            .rr-mobile-nav-toggle .rr-menu-bar {
+                background: #ffffff !important;
+                border-radius: 999px !important;
+                display: block !important;
+                flex: 0 0 2px !important;
+                height: 2px !important;
+                width: 22px !important;
+            }
+
+            #navcol-2 {
+                background: #ffffff !important;
+                border-bottom: 2px solid #ff931e !important;
+                box-shadow: 0 10px 22px rgba(0, 0, 0, 0.22) !important;
+                left: 0 !important;
+                max-height: calc(100vh - 71px) !important;
+                overflow-y: auto !important;
+                padding: 0.75rem 1rem 1rem !important;
+                position: absolute !important;
+                right: 0 !important;
+                top: 100% !important;
+                width: 100% !important;
+                z-index: 1040 !important;
+            }
+
+            #navcol-2 .navbar-nav {
+                margin-left: auto !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-md sticky-top bg-dark py-3 navbar-dark" style="background: url(&quot;assets/img/wp3718493-black-striped-wallpapers.jpg&quot;) center / auto;border-bottom: 2px solid #ff931e;">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="index.html"><img src="assets/img/horizontalRR2026Logo.png" alt="RemedyRoofingLexingtonKY" width="200px" height="auto"></a><button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-2" style="background: #ff931e;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="index.html"><img src="assets/img/horizontalRR2026Logo.png" alt="RemedyRoofingLexingtonKY" width="200px" height="auto"></a><a class="btn btn-primary rr-mobile-phone d-md-none" href="tel:8598007388">(859) 800-7388</a><button class="navbar-toggler rr-mobile-nav-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navcol-2" aria-controls="navcol-2" aria-expanded="false" aria-label="Open navigation menu"><span class="rr-menu-bar" aria-hidden="true"></span><span class="rr-menu-bar" aria-hidden="true"></span><span class="rr-menu-bar" aria-hidden="true"></span></button>
             <div class="collapse navbar-collapse justify-content-end align-items-md-center" id="navcol-2" style="text-align: right;font-size: 20px;font-family: Ubuntu, sans-serif;text-transform: uppercase;justify-content: flex-end !important;">
-                <a class="btn btn-primary ms-md-auto me-md-3 mb-3 mb-md-0 swing animated" role="button" href="tel:8598007388" style="font-family: Bungee, serif;font-size: 24px;font-weight: bold;padding: 0.55rem 1rem;margin-left: auto !important;border-radius: 0px;border-width: 2px;border-style: solid;color: #ffffff;">(859) 800-7388</a>
+                <a class="btn btn-primary rr-desktop-phone d-none d-md-inline-flex" role="button" href="tel:8598007388" style="font-family: Bungee, serif;font-size: 24px;font-weight: bold;padding: 0.55rem 1rem;margin-left: auto !important;margin-right: 1rem;border-radius: 0px;border-width: 2px;border-style: solid;color: #ffffff;">(859) 800-7388</a>
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link active" href="index.html" style="font-weight: bold;font-size: 20px;color: #000000;">Home</a></li>
                     <li class="nav-item"></li>
