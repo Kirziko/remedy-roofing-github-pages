@@ -79,6 +79,49 @@ function gtag_report_conversion(url) {
     <link rel="stylesheet" href="assets/css/static-fixes.css">
 
     <style id="rr-home-shell-sync">
+        .rr-review-grid > .col {
+            display: flex !important;
+        }
+
+        .rr-review-grid > .col > div {
+            background: #f8f9fa !important;
+            border: 1px solid rgba(0, 0, 0, 0.1) !important;
+            border-radius: 1rem !important;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08) !important;
+            overflow: hidden !important;
+            padding: 1rem !important;
+            width: 100% !important;
+        }
+
+        .rr-review-grid .d-flex {
+            align-items: center !important;
+            background: transparent !important;
+            margin-bottom: 0.8rem !important;
+        }
+
+        .rr-review-grid .d-flex > img {
+            border-radius: 50% !important;
+            flex: 0 0 76px !important;
+            height: 76px !important;
+            margin-right: 1rem !important;
+            object-fit: cover !important;
+            object-position: center center !important;
+            width: 76px !important;
+        }
+
+        .rr-review-grid .d-flex > p {
+            margin: 0 !important;
+            padding-top: 0 !important;
+        }
+
+        .rr-review-grid .d-flex + p {
+            background: transparent !important;
+            border: 0 !important;
+            border-radius: 0 !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
         body { padding-top: 96px !important; }
         .navbar.sticky-top {
             left: 0 !important;
@@ -357,7 +400,7 @@ function gtag_report_conversion(url) {
                 <h2 id="reviews" style="font-weight: bold;">What Your Neighbors Are Saying</h2>
             </div>
         </div>
-        <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-lg-3 justify-content-center">
+        <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-lg-3 justify-content-center rr-review-grid">
             <div class="col col-sm-8 col-md-6 col-lg-5 col-xxl-3">
                 <div>
                     <div class="d-flex" style="background: rgb(248,249,250);"><img class="object-fit-cover rounded-circle flex-shrink-0 me-3" width="50" height="50" src="assets/img/FF_review_2.jpeg">
