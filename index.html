@@ -224,6 +224,50 @@ function gtag_report_conversion(url) {
                 grid-template-columns: 1fr !important;
             }
         }
+
+        .rr-pride-section .container,
+        .rr-pride-section .row,
+        .rr-pride-section .row > div {
+            height: 100% !important;
+        }
+
+        .rr-pride-section .row {
+            align-items: center !important;
+        }
+
+        .rr-pride-section .row > div {
+            align-items: center !important;
+            display: flex !important;
+            justify-content: center !important;
+        }
+
+        .rr-footer-services {
+            align-items: center !important;
+            display: flex !important;
+            flex-direction: column !important;
+            text-align: center !important;
+        }
+
+        .rr-footer-services nav {
+            display: grid !important;
+            gap: 0.45rem 0.75rem !important;
+            grid-template-columns: repeat(2, minmax(90px, 1fr)) !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            width: max-content !important;
+        }
+
+        .rr-footer-services nav a {
+            text-align: center !important;
+        }
+
+        .rr-footer-credentials .rr-bbb-badge {
+            height: 57px !important;
+            max-width: none !important;
+            object-fit: cover !important;
+            object-position: left center !important;
+            width: 180px !important;
+        }
     </style>
 </head>
 
@@ -231,7 +275,7 @@ function gtag_report_conversion(url) {
     <nav class="navbar navbar-expand-md sticky-top bg-dark py-3 navbar-dark" style="background: url(&quot;assets/img/wp3718493-black-striped-wallpapers.jpg&quot;) center / auto;border-bottom: 2px solid #ff931e;">
         <div class="container"><a class="navbar-brand d-flex align-items-center" href="index.html"><img src="assets/img/horizontalRR2026Logo.png" alt="RemedyRoofingLexingtonKY" width="200px" height="auto"></a><button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-2" style="background: #ff931e;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse justify-content-end align-items-md-center" id="navcol-2" style="text-align: right;font-size: 20px;font-family: Ubuntu, sans-serif;text-transform: uppercase;justify-content: flex-end !important;">
-                <a class="btn btn-primary swing animated" role="button" href="tel:8598007388" style="font-family: system-ui, -apple-system, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, &quot;Noto Sans&quot;, &quot;Liberation Sans&quot;, Arial, sans-serif;font-size: 16px;font-weight: 700;line-height: 24px;padding: 6px 12px;margin: 10px 10px 10px auto !important;background: #ff931e;color: #000000;border: 2px solid #000000;border-radius: 6px;text-transform: none;">Call (859) 800-7388</a>
+                <a class="btn btn-primary ms-md-auto me-md-3 mb-3 mb-md-0 swing animated" role="button" href="tel:8598007388" style="font-family: Bungee, serif;font-size: 24px;font-weight: bold;padding: 0.55rem 1rem;margin-left: auto !important;border-radius: 0px;border-width: 2px;border-style: solid;color: #ffffff;">(859) 800-7388</a>
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link active" href="index.html" style="font-weight: bold;font-size: 20px;color: #000000;">Home</a></li>
                     <li class="nav-item"></li>
@@ -301,22 +345,22 @@ function gtag_report_conversion(url) {
             </div>
             <div class="row">
                 <div class="col-12 rr-google-review-wrap">
-                    <a class="rr-google-review-card rr-slide-right rr-slide-delay-3" href="https://g.page/r/CYuOpSEnst4ZEAI/review" target="_blank" rel="noopener">
+                    <a class="rr-google-review-card rr-slide-right rr-slide-delay-3" href="https://www.google.com/search?q=remedy+roofing&amp;sca_esv=cf6379f1b128b071&amp;authuser=1&amp;sxsrf=APpeQns6ueY-S8e0hlsvx5Lju8CIEy5AhQ%3A1784691209100&amp;source=hp&amp;ei=CTpgar2TA43bruEPsLmQuQ8&amp;iflsig=ABILxe8AAAAAamBIGewDM2WJz9F1E7j3AlmhzGN2Q_P2&amp;oq=&amp;gs_lp=Egdnd3Mtd2l6IgAqAggAMgcQIxjqAhgnMgoQIxjwBRjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMg0QIxieBhjwBRjqAhgnMg0QIxieBhjwBRjqAhgnMgcQIxjqAhgnMgcQIxjqAhgnMgoQLhgDGI8BGOoCMgoQABgDGI8BGOoCSP0IUABYAHABeACQAQCYAQCgAQCqAQC4AQHIAQCYAgGgAgWoAgqYAwXxBZe5hcgC9-czkgcBMaAHALIHALgHAMIHAzItMcgHA4AIAQ&amp;sclient=gws-wiz" target="_blank" rel="noopener">
                         <span class="rr-google-wordmark"><span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></span>
                         <span class="rr-google-stars" aria-label="5 star rating">★★★★★</span>
-                        <span class="rr-google-copy">Read reviews or leave one</span>
+                        <span class="rr-google-copy">Read More Reviews</span>
                     </a>
                 </div>
             </div>
         </div>
     </section>
     <section>
-        <div data-bss-parallax-bg="true" style="height: 450px;background: url(&quot;assets/img/1000017248.jpg&quot;) center / cover;">
+        <div class="rr-pride-section" data-bss-parallax-bg="true" style="height: 450px;background: url(&quot;assets/img/1000017248.jpg&quot;) center / cover;">
             <div class="container h-100">
                 <div class="row h-100">
                     <div class="col-md-10 col-lg-10 col-xl-8 col-xxl-10 offset-md-1 offset-lg-1 offset-xl-2 offset-xxl-1 text-center text-md-start d-flex d-sm-flex d-md-flex justify-content-center align-items-center align-self-center justify-content-md-start align-items-md-center justify-content-xl-center">
                         <div data-aos="slide-left" style="max-width: 90%;background: rgba(0,0,0,0.69);border-radius: 25px;padding: 20px;text-align: center;">
-                            <h3 class="text-uppercase fw-bold" style="color: rgb(255,255,255);">we pride ourselves in providing quality labor and materials, while respecting your property.</h3>
+                            <h3 class="text-uppercase fw-bold" style="color: rgb(255,255,255);">We pride ourselves in providing quality labor and materials, while respecting your property.</h3>
                             <p class="my-3" style="color: rgb(255,255,255);">Roofing, siding, gutter, and repair services for Lexington, Georgetown, Nicholasville, Richmond, Berea, Winchester, Paris, Frankfort, and everywhere in between. Licensed &amp; insured!</p><a class="btn btn-primary btn-lg me-2" role="button" data-aos="zoom-in" href="gallery.html" style="font-family: Bungee, serif;border-radius: 0px;border-width: 2px;border-style: solid;color: #ffffff;">SEE OUR WORK</a>
                         </div>
                     </div>
@@ -415,7 +459,7 @@ function gtag_report_conversion(url) {
                         </nav>
                     </div>
                     <div class="rr-footer-card rr-footer-credentials">
-                        <a class="rr-credential-link" href="https://www.bbb.org/us/ky/lexington/profile/roofing-contractors/remedy-roofing-llc-0402-235911837/#sealclick" target="_blank" rel="nofollow noopener"><img src="assets/img/bbb-235911837.png" alt="Remedy Roofing LLC BBB Business Review"></a>
+                        <a class="rr-credential-link" href="https://www.bbb.org/us/ky/lexington/profile/roofing-contractors/remedy-roofing-llc-0402-235911837/#sealclick" target="_blank" rel="nofollow noopener"><img class="rr-bbb-badge" src="assets/img/bbb-235911837.png" alt="BBB Accredited Business"></a>
                         <a class="rr-credential-link" href="Certificate_153548.PDF" target="_blank" rel="noopener"><img src="assets/img/GAFCertificate_153548.png" alt="GAF Certified Residential Roofing Contractor"></a>
                     </div>
                     <div class="rr-footer-card rr-footer-brand">
