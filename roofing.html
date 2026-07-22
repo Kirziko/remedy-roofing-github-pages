@@ -104,22 +104,9 @@ function gtag_report_conversion(url) {
                 position: relative !important;
             }
 
-            .rr-roofing-hero-media::before {
-                background: url("assets/img/roofingDRLPimage.jpg") center center / cover no-repeat !important;
-                border-radius: 1.25rem !important;
-                bottom: 12px !important;
-                content: "" !important;
-                filter: blur(7px) brightness(0.72) !important;
-                left: 12px !important;
-                opacity: 0.55 !important;
-                position: absolute !important;
-                right: 24px !important;
-                top: 12px !important;
-            }
-
             .rr-roofing-hero-photo {
                 bottom: auto !important;
-                height: calc(100% - 24px) !important;
+                height: auto !important;
                 left: 12px !important;
                 max-height: calc(100% - 24px) !important;
                 max-width: calc(100% - 36px) !important;
@@ -127,7 +114,8 @@ function gtag_report_conversion(url) {
                 object-position: center center !important;
                 position: absolute !important;
                 right: auto !important;
-                top: 12px !important;
+                top: 50% !important;
+                transform: translateY(-50%) !important;
                 width: calc(100% - 36px) !important;
                 z-index: 1 !important;
             }
