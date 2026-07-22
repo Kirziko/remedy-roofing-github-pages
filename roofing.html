@@ -93,6 +93,28 @@ function gtag_report_conversion(url) {
             width: 100% !important;
         }
 
+        @media (min-width: 768px) {
+            .rr-roofing-hero-row {
+                align-items: stretch !important;
+            }
+
+            .rr-roofing-hero-media {
+                min-height: 0 !important;
+                overflow: hidden !important;
+                position: relative !important;
+            }
+
+            .rr-roofing-hero-photo {
+                height: calc(100% - 24px) !important;
+                inset: 12px !important;
+                max-height: calc(100% - 24px) !important;
+                max-width: calc(100% - 24px) !important;
+                object-fit: contain !important;
+                position: absolute !important;
+                width: calc(100% - 24px) !important;
+            }
+        }
+
         .rr-local-shield path:first-child {
             fill: #000000 !important;
         }
@@ -254,6 +276,19 @@ function gtag_report_conversion(url) {
                 display: none !important;
             }
 
+            .rr-roofing-hero-media {
+                padding: 12px !important;
+            }
+
+            .rr-roofing-hero-photo {
+                height: auto !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                max-width: 100% !important;
+                position: static !important;
+                width: 100% !important;
+            }
+
             .rr-storm-section-image {
                 display: block !important;
                 height: auto !important;
@@ -387,8 +422,8 @@ function gtag_report_conversion(url) {
     </nav>
     <section style="background: #ffffff;">
         <div class="container-fluid" style="padding-right: 0px;">
-            <div class="row" style="margin-top: 0px;margin-bottom: 0px;">
-                <div class="col-sm-10 col-md-6 col-lg-6 col-xl-5 col-xxl-5 offset-sm-1 offset-md-1 offset-lg-1 offset-xl-1 offset-xxl-1 align-self-center" style="background: #ffffff;padding: 12px;padding-left: 12px;">
+            <div class="row rr-roofing-hero-row" style="margin-top: 0px;margin-bottom: 0px;">
+                <div class="col-sm-10 col-md-6 col-lg-6 col-xl-5 col-xxl-5 offset-sm-1 offset-md-1 offset-lg-1 offset-xl-1 offset-xxl-1 align-self-center rr-roofing-hero-copy" style="background: #ffffff;padding: 12px;padding-left: 12px;">
                     <h1 style="font-weight: bold;font-size: 2.5rem;">Roof Repair &amp; Replacement in Central Kentucky</h1>
                     <p class="lead">Free roof inspections from a trusted local roofing company.</p>
                     <h1 class="rr-proof-list" style="font-weight: bold;font-size: 18px;text-align: left;"><span class="rr-proof-item"><svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" style="color: rgb(255,147,30);">
@@ -405,7 +440,7 @@ function gtag_report_conversion(url) {
                             <path d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"></path>
                         </svg>&nbsp;Local. Reliable. Roofing Done Right.</p>
                 </div>
-                <div class="col-sm-10 col-md-5 col-lg-5 col-xl-6 col-xxl-6 offset-sm-1 offset-md-0 offset-lg-0" style="background: #ffffff;padding: 0px;"><img class="img-fluid object-fit-contain w-100 inner rr-roofing-hero-photo" src="assets/img/roofingDRLPimage.jpg" alt="LexingtonKYRoofing"></div>
+                <div class="col-sm-10 col-md-5 col-lg-5 col-xl-6 col-xxl-6 offset-sm-1 offset-md-0 offset-lg-0 rr-roofing-hero-media" style="background: #ffffff;padding: 0px;"><img class="img-fluid object-fit-contain w-100 inner rr-roofing-hero-photo" src="assets/img/roofingDRLPimage.jpg" alt="LexingtonKYRoofing"></div>
             </div>
         </div>
     </section>
