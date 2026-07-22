@@ -78,13 +78,98 @@ function gtag_report_conversion(url) {
     <link rel="stylesheet" href="assets/css/static-fixes.css">
     <link rel="stylesheet" href="assets/css/aos.min.min.css">
     <link rel="stylesheet" href="assets/css/animate.min.min.css">
+
+    <style id="rr-home-shell-sync">
+        body {
+            padding-top: 96px !important;
+        }
+
+        .navbar.sticky-top {
+            left: 0 !important;
+            position: fixed !important;
+            right: 0 !important;
+            top: 0 !important;
+            width: 100% !important;
+            z-index: 1030 !important;
+        }
+
+        .rr-footer-top {
+            align-items: stretch !important;
+            display: grid !important;
+            gap: 1rem !important;
+            grid-template-columns: minmax(150px, 0.7fr) minmax(390px, 1.55fr) minmax(230px, 0.85fr) !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            max-width: 1120px !important;
+        }
+
+        .rr-footer-card {
+            background: transparent !important;
+            border: 0 !important;
+            border-radius: 0 !important;
+            box-shadow: none !important;
+            min-height: 170px !important;
+            padding: 0.5rem !important;
+        }
+
+        .rr-footer-credentials img {
+            height: auto !important;
+            max-height: 150px !important;
+            max-width: min(300px, 100%) !important;
+            object-fit: contain !important;
+        }
+
+        .rr-footer-brand img {
+            max-width: 160px !important;
+            width: 100% !important;
+        }
+
+        .rr-footer-services {
+            align-items: center !important;
+            display: flex !important;
+            flex-direction: column !important;
+            text-align: center !important;
+        }
+
+        .rr-footer-services nav {
+            display: grid !important;
+            gap: 0.45rem 0.75rem !important;
+            grid-template-columns: repeat(2, minmax(90px, 1fr)) !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            width: max-content !important;
+        }
+
+        .rr-footer-services nav a {
+            text-align: center !important;
+        }
+
+        .rr-footer-credentials .rr-bbb-badge {
+            height: 57px !important;
+            max-width: none !important;
+            object-fit: cover !important;
+            object-position: left center !important;
+            width: 150px !important;
+        }
+
+        @media (max-width: 991.98px) {
+            body {
+                padding-top: 88px !important;
+            }
+
+            .rr-footer-top {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-md sticky-top bg-dark py-3 navbar-dark" style="background: url(&quot;assets/img/wp3718493-black-striped-wallpapers.jpg&quot;) center / auto;border-bottom: 2px solid #ff931e;">
         <div class="container"><a class="navbar-brand d-flex align-items-center" href="index.html"><img src="assets/img/horizontalRR2026Logo.png" alt="RemedyRoofingLexingtonKY" width="200px" height="auto"></a><button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-2" style="background: #ff931e;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-2" style="text-align: right;font-size: 20px;font-family: Ubuntu, sans-serif;text-transform: uppercase;">
-                <ul class="navbar-nav ms-auto">
+            <div class="collapse navbar-collapse justify-content-end align-items-md-center" id="navcol-2" style="text-align: right;font-size: 20px;font-family: Ubuntu, sans-serif;text-transform: uppercase;justify-content: flex-end !important;">
+                <a class="btn btn-primary ms-md-auto me-md-3 mb-3 mb-md-0 swing animated" role="button" href="tel:8598007388" style="font-family: Bungee, serif;font-size: 24px;font-weight: bold;padding: 0.55rem 1rem;margin-left: auto !important;border-radius: 0px;border-width: 2px;border-style: solid;color: #ffffff;">(859) 800-7388</a>
+                <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link active" href="index.html" style="font-weight: bold;font-size: 20px;color: #000000;">Home</a></li>
                     <li class="nav-item"></li>
                     <li class="nav-item"></li>
@@ -93,7 +178,7 @@ function gtag_report_conversion(url) {
                         <div class="dropdown-menu" style="background: var(--bs-gray-dark);color: var(--bs-navbar-brand-color);font-size: 18px;"><a class="dropdown-item" href="#" style="font-weight: bold;">Roofing</a><a class="dropdown-item" href="roofing.html" style="font-weight: bold;font-size: 1.0rem;">➤ Roofing Installation</a><a class="dropdown-item" href="roofingrepairs.html" style="font-weight: bold;font-size: 1.0rem;"><strong>➤&nbsp;</strong>Roofing Repairs</a><a class="dropdown-item" href="#" style="font-weight: bold;">Siding</a><a class="dropdown-item" href="siding.html" style="font-weight: bold;font-size: 1.0rem;"><strong>➤&nbsp;</strong>Siding Installation</a><a class="dropdown-item" href="sidingrepairs.html" style="font-weight: bold;font-size: 1.0rem;"><strong>➤&nbsp;</strong>Siding Repairs</a><a class="dropdown-item" href="#" style="font-weight: bold;">Gutters</a><a class="dropdown-item" href="gutters.html" style="font-weight: bold;font-size: 1.0rem;"><strong>➤&nbsp;</strong>Gutter Installation</a><a class="dropdown-item" href="gutterrepairs.html" style="font-weight: bold;font-size: 1.0rem;"><strong>➤&nbsp;</strong>Gutter Repairs</a><a class="dropdown-item" href="#" style="font-weight: bold;">Attic Venting</a><a class="dropdown-item" href="atticventinginstallation.html" style="font-weight: bold;font-size: 1.0rem;"><strong>➤&nbsp;</strong>Attic Venting Installation</a><a class="dropdown-item" href="atticventingrepairs.html" style="font-weight: bold;font-size: 1.0rem;"><strong>➤&nbsp;</strong>Attic Venting Repairs</a><a class="dropdown-item" href="#" style="font-weight: bold;">Skylights</a><a class="dropdown-item" href="skylightinstallation.html" style="font-weight: bold;font-size: 1.0rem;"><strong>➤&nbsp;</strong>Skylight Installation</a><a class="dropdown-item" href="skylightrepair.html" style="font-weight: bold;font-size: 1.0rem;"><strong>➤&nbsp;</strong>Skylight Repairs</a><a class="dropdown-item" href="#" style="font-weight: bold;">Repairs</a><a class="dropdown-item" href="repairs.html" style="font-weight: bold;font-size: 1.0rem;"><strong>➤&nbsp;</strong>General Repairs</a><a class="dropdown-item" href="stormdamage.html" style="font-weight: bold;font-size: 1.0rem;"><strong>➤&nbsp;</strong>Storm Damage Repairs</a></div>
                     </li>
                     <li class="nav-item"><a class="nav-link active" href="gallery.html" style="font-weight: bold;font-size: 20px;color: #000000;">Gallery</a></li>
-                </ul><a class="btn btn-primary ms-md-2 swing animated" role="button" href="tel:8598007388" style="font-family: Bungee, serif;font-size: 20px;border-radius: 0px;border-width: 2px;border-style: solid;color: #ffffff;">(859) 800-7388</a>
+                </ul>
             </div>
         </div>
     </nav>
@@ -199,21 +284,23 @@ function gtag_report_conversion(url) {
     <section>
         <footer class="text-white bg-dark" style="background: url(&quot;assets/img/wp3718493-black-striped-wallpapers.jpg&quot;) center repeat;border-top: 2px solid #ff931e;">
             <div class="container py-4 py-lg-5">
-                <div class="row justify-content-center align-items-center" style="text-align: center;">
-                    <div class="col-sm-4 col-md-3 col-lg-2 col-xl-2 col-xxl-2 offset-xxl-0 text-center text-lg-start d-flex flex-column align-self-center">
-                        <h3 class="fs-6 text-dark" style="font-weight: bold;">Services</h3>
-                        <ul class="list-unstyled">
-                            <li><a class="link-dark" href="roofing.html">Roofing</a></li>
-                            <li><a class="link-dark" href="siding.html">Siding</a></li>
-                            <li><a class="link-dark" href="gutters.html">Gutters</a></li>
-                            <li><a class="link-dark" href="repairs.html">Repairs</a></li>
-                        </ul>
+                <div class="rr-footer-top">
+                    <div class="rr-footer-card rr-footer-services">
+                        <h3>Services</h3>
+                        <nav aria-label="Footer services">
+                            <a href="roofing.html">Roofing</a>
+                            <a href="siding.html">Siding</a>
+                            <a href="gutters.html">Gutters</a>
+                            <a href="repairs.html">Repairs</a>
+                        </nav>
                     </div>
-                    <div class="col-lg-4 col-xl-4 col-xxl-1 offset-xl-0 offset-xxl-1 text-center align-self-center"><script type="text/javascript" src="https://seal-louisville.bbb.org/inc/legacy.js"></script><center><a href="https://www.bbb.org/us/ky/lexington/profile/roofing-contractors/remedy-roofing-llc-0402-235911837/#sealclick" id="bbblink" class="rbhzbum" target="_blank" rel="nofollow"><img src="https://seal-louisville.bbb.org/logo/rbhzbum/bbb-235911837.png" style="border: 0;" alt="Remedy Roofing LLC  BBB Business Review" /></a></center></div>
-                    <div class="col-lg-3 col-xl-3 col-xxl-2 offset-xxl-2" style="text-align: center;"><a href="Certificate_153548.PDF" target="_blank"><img style="text-align: center;width: 150px;" src="assets/img/GAFCertificate_153548.png"></a></div>
-                    <div class="col-lg-3 col-xl-3 col-xxl-3 offset-lg-0 offset-xl-0 offset-xxl-1 text-center text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start order-lg-last">
-                        <div class="fw-bold d-flex align-items-center mb-2"><span><img src="assets/img/RR-2025-Logo-FullColor_smaller.png" width="150" height="auto"></span></div>
-                        <p style="color: var(--bs-emphasis-color);">Roofing | Siding | Gutters | Repairs<br>Lexington &amp; Central KY</p>
+                    <div class="rr-footer-card rr-footer-credentials">
+                        <a class="rr-credential-link" href="https://www.bbb.org/us/ky/lexington/profile/roofing-contractors/remedy-roofing-llc-0402-235911837/#sealclick" target="_blank" rel="nofollow noopener"><img class="rr-bbb-badge" src="assets/img/bbb-235911837.png" alt="BBB Accredited Business"></a>
+                        <a class="rr-credential-link" href="Certificate_153548.PDF" target="_blank" rel="noopener"><img src="assets/img/GAFCertificate_153548.png" alt="GAF Certified Residential Roofing Contractor"></a>
+                    </div>
+                    <div class="rr-footer-card rr-footer-brand">
+                        <img src="assets/img/RR-2025-Logo-FullColor_smaller.png" alt="Remedy Roofing">
+                        <p>Roofing | Siding | Gutters | Repairs<br>Lexington &amp; Central KY</p>
                     </div>
                 </div>
                 <hr style="border-color: #ff931e;">
