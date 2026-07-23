@@ -264,6 +264,26 @@ function gtag_report_conversion(url) {
             }
         }
     </style>
+
+    <style id="rr-desktop-nav-order">
+        @media (min-width: 768px) {
+            #navcol-2 .navbar-nav > .nav-item:empty {
+                display: none !important;
+            }
+
+            #navcol-2 .navbar-nav > .nav-item:first-child {
+                order: 1 !important;
+            }
+
+            #navcol-2 .navbar-nav > .nav-item:last-child {
+                order: 2 !important;
+            }
+
+            #navcol-2 .navbar-nav > .nav-item.dropdown {
+                order: 3 !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
