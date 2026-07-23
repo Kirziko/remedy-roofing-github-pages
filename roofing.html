@@ -172,6 +172,10 @@ function gtag_report_conversion(url) {
             display: none !important;
         }
 
+        .rr-transformation-location {
+            display: none;
+        }
+
         .rr-proof-item {
             align-items: center !important;
             display: inline-flex !important;
@@ -436,7 +440,27 @@ function gtag_report_conversion(url) {
 
             .rr-transformations .col > a {
                 display: block !important;
+                overflow: hidden !important;
+                position: relative !important;
                 width: 100% !important;
+            }
+
+            .rr-transformation-location {
+                align-items: center !important;
+                background: #ffffff !important;
+                bottom: 0 !important;
+                color: #000000 !important;
+                display: flex !important;
+                font-size: 1.05rem !important;
+                font-weight: 700 !important;
+                height: 20.5% !important;
+                justify-content: center !important;
+                left: 0 !important;
+                letter-spacing: 0.01em !important;
+                position: absolute !important;
+                right: 0 !important;
+                text-align: center !important;
+                z-index: 2 !important;
             }
 
             .rr-transformations .col img {
@@ -499,6 +523,7 @@ function gtag_report_conversion(url) {
 
             .navbar > .container {
                 align-items: flex-end !important;
+                padding-left: 6px !important;
             }
 
             .navbar-brand {
@@ -647,13 +672,13 @@ function gtag_report_conversion(url) {
                 </div>
             </div>
             <div class="row g-0 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center" data-bss-baguettebox="">
-                <div class="col"><a href="assets/img/DanvilleB&A.jpg"><img class="img-fluid object-fit-contain rounded h-100" width="1920" height="954" src="assets/img/DanvilleB&A.jpg" style="border-radius: 25px;border: 1px solid #a2abb3 ;"></a></div>
-                <div class="col"><a href="assets/img/LexingtonB&A_1.jpg"><img class="img-fluid object-fit-contain rounded h-100" width="1920" height="954" src="assets/img/LexingtonB&A_1.jpg" style="border-radius: 25px;border: 1px solid #a2abb3 ;"></a></div>
-                <div class="col"><a href="assets/img/LexingtonB&A_2.jpg"><img class="img-fluid object-fit-contain rounded h-100" width="1920" height="954" src="assets/img/LexingtonB&A_2.jpg" style="border-radius: 25px;border: 1px solid #a2abb3 ;"></a></div>
-                <div class="col"><a href="assets/img/LexingtonB&A_3.jpg"><img class="img-fluid object-fit-contain rounded h-100" width="1920" height="954" src="assets/img/LexingtonB&A_3.jpg" style="border-radius: 25px;border: 1px solid #a2abb3 ;"></a></div>
-                <div class="col"><a href="assets/img/RichmondB&A.jpg"><img class="img-fluid object-fit-contain rounded h-100" width="1920" height="954" src="assets/img/RichmondB&A.jpg" style="border-radius: 25px;border: 1px solid #a2abb3 ;"></a></div>
-                <div class="col"><a href="assets/img/VersaillesB&A.jpg"><img class="img-fluid object-fit-contain rounded h-100" width="1920" height="954" src="assets/img/VersaillesB&A.jpg" style="border-radius: 25px;border: 1px solid #a2abb3 ;"></a></div>
-                <div class="col"><a href="assets/img/WinchesterB&A.jpg"><img class="img-fluid object-fit-contain rounded h-100" width="1920" height="954" src="assets/img/WinchesterB&A.jpg" style="border-radius: 25px;border: 1px solid #a2abb3 ;"></a></div>
+                <div class="col"><a href="assets/img/DanvilleB&A.jpg"><img class="img-fluid object-fit-contain rounded h-100" width="1920" height="954" src="assets/img/DanvilleB&A.jpg" style="border-radius: 25px;border: 1px solid #a2abb3 ;"><span class="rr-transformation-location">Danville, KY</span></a></div>
+                <div class="col"><a href="assets/img/LexingtonB&A_1.jpg"><img class="img-fluid object-fit-contain rounded h-100" width="1920" height="954" src="assets/img/LexingtonB&A_1.jpg" style="border-radius: 25px;border: 1px solid #a2abb3 ;"><span class="rr-transformation-location">Lexington, KY</span></a></div>
+                <div class="col"><a href="assets/img/LexingtonB&A_2.jpg"><img class="img-fluid object-fit-contain rounded h-100" width="1920" height="954" src="assets/img/LexingtonB&A_2.jpg" style="border-radius: 25px;border: 1px solid #a2abb3 ;"><span class="rr-transformation-location">Lexington, KY</span></a></div>
+                <div class="col"><a href="assets/img/LexingtonB&A_3.jpg"><img class="img-fluid object-fit-contain rounded h-100" width="1920" height="954" src="assets/img/LexingtonB&A_3.jpg" style="border-radius: 25px;border: 1px solid #a2abb3 ;"><span class="rr-transformation-location">Lexington, KY</span></a></div>
+                <div class="col"><a href="assets/img/RichmondB&A.jpg"><img class="img-fluid object-fit-contain rounded h-100" width="1920" height="954" src="assets/img/RichmondB&A.jpg" style="border-radius: 25px;border: 1px solid #a2abb3 ;"><span class="rr-transformation-location">Richmond, KY</span></a></div>
+                <div class="col"><a href="assets/img/VersaillesB&A.jpg"><img class="img-fluid object-fit-contain rounded h-100" width="1920" height="954" src="assets/img/VersaillesB&A.jpg" style="border-radius: 25px;border: 1px solid #a2abb3 ;"><span class="rr-transformation-location">Versailles, KY</span></a></div>
+                <div class="col"><a href="assets/img/WinchesterB&A.jpg"><img class="img-fluid object-fit-contain rounded h-100" width="1920" height="954" src="assets/img/WinchesterB&A.jpg" style="border-radius: 25px;border: 1px solid #a2abb3 ;"><span class="rr-transformation-location">Winchester, KY</span></a></div>
             </div>
         </div>
     </section>
