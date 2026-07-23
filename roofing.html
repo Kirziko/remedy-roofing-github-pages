@@ -138,6 +138,22 @@ function gtag_report_conversion(url) {
                 display: block !important;
                 height: 100% !important;
             }
+
+            .rr-transformations [data-bss-baguettebox] > .col img {
+                height: auto !important;
+                object-fit: contain !important;
+                object-position: center center !important;
+                width: 100% !important;
+            }
+
+            .rr-transformations [data-bss-baguettebox] > .col:last-child {
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+
+            .rr-process-final-row {
+                justify-content: center !important;
+            }
         }
 
         .rr-local-shield path:first-child {
@@ -631,7 +647,7 @@ function gtag_report_conversion(url) {
         </div>
     </div>
     <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center rr-process-final-row">
             <div class="col-md-3 text-center" style="border-radius: 25px;border: 1px dotted var(--bs-secondary) ;"><img class="m-2" src="assets/img/hammer_color.png" width="50px" height="auto">
                 <p style="font-weight: bold;">5.) Roof Installation</p>
                 <p style="font-size: 0.9rem;">Our expert crew installs your new roof with precision and care.</p>
