@@ -346,6 +346,30 @@ function gtag_report_conversion(url) {
                 display: none !important;
             }
 
+            .rr-services-grid {
+                display: grid !important;
+                gap: 6px !important;
+                grid-auto-rows: 1fr !important;
+                grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+                padding-left: 5px !important;
+                padding-right: 5px !important;
+                width: 100% !important;
+            }
+
+            .rr-services-grid > .col {
+                box-sizing: border-box !important;
+                height: 100% !important;
+                margin: 0 !important;
+                max-width: none !important;
+                min-width: 0 !important;
+                padding: 6px !important;
+                width: auto !important;
+            }
+
+            .rr-services-grid > .col p {
+                overflow-wrap: anywhere !important;
+            }
+
             .rr-roofing-hero-media {
                 padding: 0 !important;
             }
@@ -657,7 +681,7 @@ function gtag_report_conversion(url) {
     <section>
         <h2 class="text-center" id="roofing-services" style="font-weight: bold;margin: 12px;">Our Roofing Services</h2>
         <div class="container-fluid" style="padding: 0px;">
-            <div class="row g-0 justify-content-center" style="margin: 0px;position: relative;padding-right: 5px;padding-left: 5px;">
+            <div class="row g-0 justify-content-center rr-services-grid" style="margin: 0px;position: relative;padding-right: 5px;padding-left: 5px;">
                 <div class="col" style="border-radius: 25px;text-align: center;padding: 8px;margin: 3px;border: 1px dotted var(--bs-secondary) ;"><img src="assets/img/hammer_color.png" width="50px" height="auto" style="margin: 5px;">
                     <p style="font-weight: bold;">Roof Repair</p>
                     <p style="font-size: 0.9rem;">Fast, reliable repairs that stop leaks and prevent bigger issues.</p>
