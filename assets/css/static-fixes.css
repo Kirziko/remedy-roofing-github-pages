@@ -341,6 +341,10 @@ body > section:first-of-type [data-bss-parallax-bg] .btn {
   gap: 0.45rem 0.55rem;
 }
 
+.rr-rounded-feature-image {
+  border-radius: 1.25rem !important;
+}
+
 .rr-footer-services a {
   background: rgba(255, 255, 255, 0.72);
   border: 1px solid rgba(255, 147, 30, 0.22);
