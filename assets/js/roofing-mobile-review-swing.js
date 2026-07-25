@@ -1,14 +1,15 @@
 (function () {
   document.addEventListener("DOMContentLoaded", function () {
-    const trigger = document.querySelector("#rr-reviews-swing-trigger");
+    const triggers = Array.from(document.querySelectorAll(".rr-mobile-swing-trigger"));
     const phoneButton = document.querySelector(".rr-mobile-phone");
     const stickyHeader = document.querySelector(".navbar.sticky-top");
     const mobileViewport = window.matchMedia("(max-width: 767.98px)");
 
-    if (!trigger || !phoneButton || !stickyHeader) return;
+    if (!triggers.length || !phoneButton || !stickyHeader) return;
 
-    let hasTriggered = false;
-    let previousTriggerTop = trigger.getBoundingClientRect().top;
+    let previousTriggerTops = triggers.map(function (trigger) {
+      return trigger.getBoundingClientRect().top;
+    });
     let ticking = false;
 
     function replaySwing() {
@@ -18,21 +19,34 @@
     }
 
     function checkTriggerPosition() {
-      const triggerTop = trigger.getBoundingClientRect().top;
       const headerBottom = stickyHeader.getBoundingClientRect().bottom;
+      let shouldReplaySwing = false;
 
-      if (
-        !hasTriggered &&
-        mobileViewport.matches &&
-        previousTriggerTop > headerBottom &&
-        triggerTop <= headerBottom
-      ) {
-        hasTriggered = true;
+      triggers.forEach(function (trigger, index) {
+        const triggerTop = trigger.getBoundingClientRect().top;
+
+        if (
+          mobileViewport.matches &&
+          previousTriggerTops[index] > headerBottom &&
+          triggerTop <= headerBottom
+        ) {
+          shouldReplaySwing = true;
+        }
+
+        previousTriggerTops[index] = triggerTop;
+      });
+
+      if (shouldReplaySwing) {
         replaySwing();
       }
 
-      previousTriggerTop = triggerTop;
       ticking = false;
+    }
+
+    function resetTriggerPositions() {
+      previousTriggerTops = triggers.map(function (trigger) {
+        return trigger.getBoundingClientRect().top;
+      });
     }
 
     window.addEventListener("scroll", function () {
@@ -42,6 +56,6 @@
       }
     }, { passive: true });
 
-    window.addEventListener("resize", checkTriggerPosition);
+    window.addEventListener("resize", resetTriggerPositions);
   });
 })();
