@@ -102,11 +102,8 @@
 
           if (response.ok) {
             form.reset();
-            showMessage(
-              messageContainer,
-              "success",
-              "Thank you! Your free inspection request was sent. We'll contact you shortly."
-            );
+            window.location.assign("thankyou.html");
+            return;
           } else {
             showMessage(messageContainer, "danger", getErrorMessage(response, data));
           }
