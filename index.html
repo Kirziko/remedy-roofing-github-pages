@@ -150,6 +150,204 @@ function gtag_report_conversion(url) {
             white-space: normal !important;
         }
 
+        .rr-home-hero {
+            background: #111111;
+            height: clamp(400px, 32vw, 540px);
+            isolation: isolate;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .rr-home-hero-media,
+        .rr-home-hero-shade {
+            inset: 0;
+            position: absolute;
+        }
+
+        .rr-home-hero-media {
+            z-index: 0;
+        }
+
+        .rr-home-hero-panel {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            width: 50%;
+        }
+
+        .rr-home-hero-before {
+            left: 0;
+        }
+
+        .rr-home-hero-after {
+            right: 0;
+        }
+
+        .rr-home-hero-panel img {
+            display: block;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+            width: 100%;
+        }
+
+        .rr-home-hero-panel::after {
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.1));
+            content: "";
+            inset: 0;
+            position: absolute;
+        }
+
+        .rr-home-hero-label {
+            border: 1px solid rgba(255, 255, 255, 0.78);
+            border-radius: 0.45rem;
+            color: #ffffff;
+            font-family: Bungee, serif;
+            font-size: clamp(0.95rem, 1.45vw, 1.25rem);
+            letter-spacing: 0.06em;
+            padding: 0.55rem 1rem;
+            position: absolute;
+            top: 1.5rem;
+            z-index: 2;
+        }
+
+        .rr-home-hero-before .rr-home-hero-label {
+            background: rgba(0, 0, 0, 0.86);
+            left: 1.5rem;
+        }
+
+        .rr-home-hero-after .rr-home-hero-label {
+            background: rgba(255, 147, 30, 0.94);
+            right: 1.5rem;
+        }
+
+        .rr-home-hero-divider {
+            background: #ff931e;
+            bottom: -2%;
+            box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.88), 0 0 22px rgba(0, 0, 0, 0.45);
+            left: 50%;
+            position: absolute;
+            top: -2%;
+            transform: translateX(-50%) skewX(-5deg);
+            width: 5px;
+            z-index: 3;
+        }
+
+        .rr-home-hero-shade {
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.08) 68%, rgba(0, 0, 0, 0.52) 100%);
+            z-index: 2;
+        }
+
+        .rr-home-hero .container {
+            align-items: flex-end;
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            padding-bottom: 1.2rem;
+            position: relative;
+            z-index: 4;
+        }
+
+        .rr-home-hero-content {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            max-width: 980px;
+            padding: 1.25rem;
+            text-align: center;
+        }
+
+        .rr-home-hero .rr-hero-cta {
+            order: 2;
+        }
+
+        .rr-home-hero-title {
+            color: #ffffff;
+            font-family: Bungee, serif;
+            font-size: clamp(0.9rem, 1.45vw, 1.2rem);
+            font-style: italic;
+            margin: 0 0 0.65rem;
+            order: 1;
+            text-shadow: 1px 2px 10px #000000;
+        }
+
+        @media (max-width: 767.98px) {
+            .rr-home-hero {
+                height: 680px;
+            }
+
+            .rr-home-hero-panel {
+                height: 50%;
+                left: 0;
+                width: 100%;
+            }
+
+            .rr-home-hero-before {
+                top: 0;
+            }
+
+            .rr-home-hero-after {
+                bottom: 0;
+                right: auto;
+                top: 50%;
+            }
+
+            .rr-home-hero-divider {
+                bottom: auto;
+                height: 4px;
+                left: 0;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: auto;
+            }
+
+            .rr-home-hero-label {
+                font-size: 0.78rem;
+                padding: 0.4rem 0.75rem;
+                top: 0.8rem;
+            }
+
+            .rr-home-hero-before .rr-home-hero-label {
+                left: 0.8rem;
+            }
+
+            .rr-home-hero-after .rr-home-hero-label {
+                bottom: 0.8rem;
+                left: 0.8rem;
+                right: auto;
+                top: auto;
+            }
+
+            .rr-home-hero-shade {
+                background: radial-gradient(circle at center, rgba(0, 0, 0, 0.38) 0, rgba(0, 0, 0, 0.16) 38%, rgba(0, 0, 0, 0) 72%);
+            }
+
+            .rr-home-hero .container {
+                align-items: center;
+                padding-bottom: 0;
+            }
+
+            .rr-home-hero-content {
+                padding: 1rem;
+            }
+
+            .rr-home-hero .rr-hero-cta {
+                font-size: 1.15rem !important;
+                max-width: 340px !important;
+                order: 1;
+                padding: 0.85rem 1rem !important;
+            }
+
+            .rr-home-hero-title {
+                font-size: 0.9rem;
+                margin: 0.75rem 0 0;
+                order: 2;
+            }
+        }
+
         .rr-testimonial-grid > .col {
             align-items: stretch !important;
             display: flex !important;
@@ -433,16 +631,16 @@ function gtag_report_conversion(url) {
             </div>
         </div>
     </nav>
-    <section>
-        <div data-bss-parallax-bg="true" style="height: 600px;background: url(&quot;assets/img/RoofersCentralKentucky.jpg&quot;) center / cover;">
-            <div class="container h-100">
-                <div class="row h-100">
-                    <div class="col-md-10 col-lg-10 col-xl-10 offset-md-1 offset-lg-1 offset-xl-1 text-center text-md-start d-flex d-sm-flex d-md-flex justify-content-center align-items-center justify-content-md-start align-items-md-center justify-content-xl-center">
-                        <div class="text-center"><a class="btn btn-primary btn-lg rr-hero-cta swing animated" role="button" href="#contact-section" style="border-radius: 0px;border-width: 2px;border-style: solid;font-family: Bungee, serif;color: #ffffff;font-size: 1.8rem;">GET YOUR FREE ROOF INSPECTION TODAY!</a>
-                            <h1 class="text-uppercase fw-bold" style="text-align: center;color: rgb(255,255,255);text-shadow: 1px 1px 11px rgb(18,18,18);font-family: Bungee, serif;font-style: italic;font-size: 1.2rem;padding: 10px;">SERVING LEXINGTON, KY &amp; SURROUNDING AREAS</h1>
-                        </div>
-                    </div>
-                </div>
+    <section class="rr-home-hero">
+        <div class="rr-home-hero-media" aria-hidden="true">
+            <figure class="rr-home-hero-panel rr-home-hero-before"><img src="assets/img/Winchester-before-hero.webp" alt="" width="1200" height="760" decoding="async" fetchpriority="high"><figcaption class="rr-home-hero-label">Before</figcaption></figure>
+            <figure class="rr-home-hero-panel rr-home-hero-after"><img src="assets/img/Winchester-after-hero.webp" alt="" width="1200" height="760" decoding="async" fetchpriority="high"><figcaption class="rr-home-hero-label">After</figcaption></figure>
+            <span class="rr-home-hero-divider"></span>
+        </div>
+        <div class="rr-home-hero-shade" aria-hidden="true"></div>
+        <div class="container">
+            <div class="rr-home-hero-content"><a class="btn btn-primary btn-lg rr-hero-cta swing animated" role="button" href="#contact-section" style="font-size: 1.8rem;">GET YOUR FREE ROOF INSPECTION TODAY!</a>
+                <h1 class="rr-home-hero-title">SERVING LEXINGTON, KY &amp; SURROUNDING AREAS</h1>
             </div>
         </div>
     </section>
