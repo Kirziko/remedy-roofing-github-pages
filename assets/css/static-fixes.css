@@ -272,7 +272,7 @@ body > section:first-of-type [data-bss-parallax-bg] .btn {
 @keyframes rrSlideRight {
   from {
     opacity: 0;
-    transform: translateX(-28px);
+    transform: translateX(72px);
   }
 
   to {
@@ -284,6 +284,10 @@ body > section:first-of-type [data-bss-parallax-bg] .btn {
 @media (max-width: 991.98px) {
   body {
     padding-top: 88px;
+  }
+
+  .rr-slide-right {
+    animation: none;
   }
 
   .rr-testimonial-card {
