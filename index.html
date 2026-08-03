@@ -74,19 +74,10 @@ function gtag_report_conversion(url) {
             "url": "https://www.remedyroofingky.com"
         }
     </script>
-    <link rel="icon" type="image/png" sizes="390x389" href="assets/img/RR2025icon.png">
-    <link rel="icon" type="image/png" sizes="390x389" href="assets/img/RR2025icon.png" media="(prefers-color-scheme: dark)">
-    <link rel="icon" type="image/png" sizes="390x389" href="assets/img/RR2025icon.png">
-    <link rel="icon" type="image/png" sizes="390x389" href="assets/img/RR2025icon.png" media="(prefers-color-scheme: dark)">
-    <link rel="icon" type="image/png" sizes="390x389" href="assets/img/RR2025icon.png">
-    <link rel="icon" type="image/png" sizes="390x389" href="assets/img/RR2025icon.png">
-    <link rel="icon" type="image/png" sizes="390x389" href="assets/img/RR2025icon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/RR2025icon-96.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
     <link rel="stylesheet" href="assets/css/static-fixes.css?v=slide-right-1">
-    <link rel="stylesheet" href="assets/css/aos.min.min.css">
-    <link rel="stylesheet" href="assets/css/animate.min.min.css">
     <style>
         body > section:first-of-type [data-bss-parallax-bg] .container,
         body > section:first-of-type [data-bss-parallax-bg] .row {
@@ -435,6 +426,24 @@ function gtag_report_conversion(url) {
             height: 100% !important;
         }
 
+        .rr-pride-section {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .rr-pride-section .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .rr-pride-media {
+            height: 100%;
+            inset: 0;
+            object-fit: cover;
+            position: absolute;
+            width: 100%;
+        }
+
         .rr-pride-section .row {
             align-items: center !important;
         }
@@ -614,8 +623,8 @@ function gtag_report_conversion(url) {
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md sticky-top bg-dark py-3 navbar-dark" style="background: url(&quot;assets/img/wp3718493-black-striped-wallpapers.jpg&quot;) center / auto;border-bottom: 2px solid #ff931e;">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="index.html"><img src="assets/img/remedy-roofing-side-by-side-mobile.png" alt="RemedyRoofingLexingtonKY" width="200px" height="auto"></a><a class="btn btn-primary rr-mobile-phone d-md-none swing animated" onclick="return gtag_report_conversion('tel:8598007388');" href="tel:8598007388">(859) 800-7388</a><button class="navbar-toggler rr-mobile-nav-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navcol-2" aria-controls="navcol-2" aria-expanded="false" aria-label="Open navigation menu"><span class="rr-menu-bar" aria-hidden="true"></span><span class="rr-menu-bar" aria-hidden="true"></span><span class="rr-menu-bar" aria-hidden="true"></span></button>
+    <nav class="navbar navbar-expand-md sticky-top bg-dark py-3 navbar-dark" style="background: url(&quot;assets/img/homepage-stripe-background.webp&quot;) center / 1920px 1200px;border-bottom: 2px solid #ff931e;">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="index.html"><img src="assets/img/remedy-roofing-side-by-side-mobile.webp" alt="Remedy Roofing Lexington KY" width="200" height="63" decoding="async"></a><a class="btn btn-primary rr-mobile-phone d-md-none swing animated" onclick="return gtag_report_conversion('tel:8598007388');" href="tel:8598007388">(859) 800-7388</a><button class="navbar-toggler rr-mobile-nav-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navcol-2" aria-controls="navcol-2" aria-expanded="false" aria-label="Open navigation menu"><span class="rr-menu-bar" aria-hidden="true"></span><span class="rr-menu-bar" aria-hidden="true"></span><span class="rr-menu-bar" aria-hidden="true"></span></button>
             <div class="collapse navbar-collapse justify-content-end align-items-md-center" id="navcol-2" style="text-align: right;font-size: 20px;font-family: Ubuntu, sans-serif;text-transform: uppercase;justify-content: flex-end !important;">
                 <a class="btn btn-primary rr-desktop-phone d-none d-md-inline-flex swing animated" role="button" onclick="return gtag_report_conversion('tel:8598007388');" href="tel:8598007388" style="font-family: Bungee, serif;font-size: 24px;font-weight: bold;padding: 0.55rem 1rem;margin-left: auto !important;margin-right: 1rem;border-radius: 0px;border-width: 2px;border-style: solid;color: #ffffff;">(859) 800-7388</a>
                 <ul class="navbar-nav">
@@ -633,8 +642,8 @@ function gtag_report_conversion(url) {
     </nav>
     <section class="rr-home-hero">
         <div class="rr-home-hero-media" aria-hidden="true">
-            <figure class="rr-home-hero-panel rr-home-hero-before"><img src="assets/img/Winchester-before-hero.webp" alt="" width="1200" height="760" decoding="async" fetchpriority="high"><figcaption class="rr-home-hero-label">Before</figcaption></figure>
-            <figure class="rr-home-hero-panel rr-home-hero-after"><img src="assets/img/Winchester-after-hero.webp" alt="" width="1200" height="760" decoding="async" fetchpriority="high"><figcaption class="rr-home-hero-label">After</figcaption></figure>
+            <figure class="rr-home-hero-panel rr-home-hero-before"><img src="assets/img/Winchester-before-hero-1200.webp" srcset="assets/img/Winchester-before-hero-480.webp 480w, assets/img/Winchester-before-hero-768.webp 768w, assets/img/Winchester-before-hero-1200.webp 1200w" sizes="(max-width: 767.98px) 100vw, 50vw" alt="" width="1200" height="760" decoding="async" fetchpriority="high"><figcaption class="rr-home-hero-label">Before</figcaption></figure>
+            <figure class="rr-home-hero-panel rr-home-hero-after"><img src="assets/img/Winchester-after-hero-1200.webp" srcset="assets/img/Winchester-after-hero-480.webp 480w, assets/img/Winchester-after-hero-768.webp 768w, assets/img/Winchester-after-hero-1200.webp 1200w" sizes="(max-width: 767.98px) 100vw, 50vw" alt="" width="1200" height="760" decoding="async"><figcaption class="rr-home-hero-label">After</figcaption></figure>
             <span class="rr-home-hero-divider"></span>
         </div>
         <div class="rr-home-hero-shade" aria-hidden="true"></div>
@@ -644,25 +653,25 @@ function gtag_report_conversion(url) {
             </div>
         </div>
     </section>
-    <section style="background: url(&quot;assets/img/wp3718493-black-striped-wallpapers.jpg&quot;) center, var(--bs-gray-900);color: rgb(255,255,255);font-family: Audiowide, serif;border-top: 2px solid #ff931e;border-bottom: 1px dashed #ff931e;">
+    <section style="background: url(&quot;assets/img/homepage-stripe-background.webp&quot;) center / 1920px 1200px, var(--bs-gray-900);color: rgb(255,255,255);font-family: Audiowide, serif;border-top: 2px solid #ff931e;border-bottom: 1px dashed #ff931e;">
         <div class="container">
             <div class="row" style="padding: 10px;">
-                <div class="col-md-3" style="padding: 10px;text-align: center;"><i class="fas fa-hammer" data-bss-hover-animate="tada" style="font-size: 25px;color: #ff931e;padding-top: 5px;"></i>
+                <div class="col-md-3" style="padding: 10px;text-align: center;"><img src="assets/img/hammer_color.png" alt="" width="25" height="25" decoding="async" style="margin-top: 5px;">
                     <h1 style="font-size: 1.8rem;font-style: italic;text-align: center;padding-top: 10px;margin-bottom: 4px;"><a href="roofing.html" style="color: var(--bs-black);font-family: Bungee, serif;">ROOFING</a></h1>
                 </div>
-                <div class="col-md-3" style="padding: 10px;text-align: center;"><i class="fas fa-hammer" data-bss-hover-animate="tada" style="font-size: 25px;color: #ff931e;padding-top: 5px;"></i>
+                <div class="col-md-3" style="padding: 10px;text-align: center;"><img src="assets/img/hammer_color.png" alt="" width="25" height="25" decoding="async" style="margin-top: 5px;">
                     <h1 style="text-align: center;padding-top: 10px;margin-bottom: 4px;font-size: 1.8rem;font-style: italic;"><a href="siding.html" style="color: var(--bs-black);font-family: Bungee, serif;">SIDING</a></h1>
                 </div>
-                <div class="col-md-3" style="padding: 10px;text-align: center;"><i class="fas fa-hammer" data-bss-hover-animate="tada" style="font-size: 25px;color: #ff931e;padding-top: 5px;"></i>
+                <div class="col-md-3" style="padding: 10px;text-align: center;"><img src="assets/img/hammer_color.png" alt="" width="25" height="25" decoding="async" style="margin-top: 5px;">
                     <h1 style="text-align: center;padding-top: 10px;margin-bottom: 4px;font-size: 1.8rem;font-style: italic;"><a href="gutters.html" style="color: var(--bs-black);font-family: Bungee, serif;">GUTTERS</a></h1>
                 </div>
-                <div class="col-md-3" style="padding: 10px;text-align: center;"><i class="fas fa-hammer" data-bss-hover-animate="tada" style="font-size: 25px;color: #ff931e;padding-top: 5px;"></i>
+                <div class="col-md-3" style="padding: 10px;text-align: center;"><img src="assets/img/hammer_color.png" alt="" width="25" height="25" decoding="async" style="margin-top: 5px;">
                     <h1 style="text-align: center;padding-top: 10px;margin-bottom: 4px;font-size: 1.8rem;font-style: italic;"><a href="repairs.html" style="color: var(--bs-black);font-family: Bungee, serif;">REPAIRS</a></h1>
                 </div>
             </div>
         </div>
     </section>
-    <section class="rr-testimonials" style="background: url(&quot;assets/img/wp3718493-black-striped-wallpapers.jpg&quot;) center / auto;">
+    <section class="rr-testimonials" style="background: url(&quot;assets/img/homepage-stripe-background.webp&quot;) center / 1920px 1200px;">
         <div class="container py-4 py-xl-5">
             <h1 class="rr-testimonials-title rr-slide-right">EXPERTISE IN EVERY SHINGLE DETAIL!</h1>
             <div class="row gy-4 align-items-stretch row-cols-1 row-cols-lg-3 rr-testimonial-grid">
@@ -697,7 +706,8 @@ function gtag_report_conversion(url) {
         </div>
     </section>
     <section>
-        <div class="rr-pride-section" data-bss-parallax-bg="true" style="height: 450px;background: url(&quot;assets/img/1000017248.jpg&quot;) center / cover;">
+        <div class="rr-pride-section" style="height: 450px;">
+            <img class="rr-pride-media" src="assets/img/homepage-pride-960.webp" srcset="assets/img/homepage-pride-960.webp 960w, assets/img/homepage-pride-1600.webp 1600w" sizes="100vw" alt="" width="1600" height="794" loading="lazy" decoding="async">
             <div class="container h-100">
                 <div class="row h-100">
                     <div class="col-md-10 col-lg-10 col-xl-8 col-xxl-10 offset-md-1 offset-lg-1 offset-xl-2 offset-xxl-1 text-center text-md-start d-flex d-sm-flex d-md-flex justify-content-center align-items-center align-self-center justify-content-md-start align-items-md-center justify-content-xl-center">
@@ -710,7 +720,7 @@ function gtag_report_conversion(url) {
             </div>
         </div>
     </section>
-    <section style="background: url(&quot;assets/img/wp3718493-black-striped-wallpapers.jpg&quot;) center, var(--bs-gray-900);color: rgb(255,255,255);font-family: Audiowide, serif;">
+    <section style="background: url(&quot;assets/img/homepage-stripe-background.webp&quot;) center / 1920px 1200px, var(--bs-gray-900);color: rgb(255,255,255);font-family: Audiowide, serif;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-xl-12 col-xxl-12 offset-xl-0 offset-xxl-0">
@@ -722,9 +732,9 @@ function gtag_report_conversion(url) {
                     <p style="margin-top: 0px;margin-right: 0px;margin-left: 0px;padding: 5px;font-family: system-ui, sans-serif;color: var(--bs-emphasis-color);"><strong>We service the following areas:</strong>&nbsp;Lexington, Versailles, Georgetown, Richmond, Berea, Paris, Frankfort, Lawrenceburg, Nicholasville, Winchester, Midway, &amp; Wilmore</p>
                 </div>
             </div>
-        </div><img class="img-fluid" src="assets/img/ServiceAreaRemedyRoofingKY.jpeg" alt="LexingtonKYRoofer">
+        </div><img class="img-fluid" src="assets/img/homepage-service-area-960.webp" srcset="assets/img/homepage-service-area-960.webp 960w, assets/img/homepage-service-area-1744.webp 1744w" sizes="100vw" width="1744" height="318" loading="lazy" decoding="async" alt="Remedy Roofing service area around Lexington, Kentucky">
     </section>
-    <section style="background: url(&quot;assets/img/wp3718493-black-striped-wallpapers.jpg&quot;), var(--bs-gray-200);"></section>
+    <section style="background: url(&quot;assets/img/homepage-stripe-background.webp&quot;) center / 1920px 1200px, var(--bs-gray-200);"></section>
     <section style="margin-bottom: 12px;">
         <div class="container">
             <div class="row">
@@ -734,7 +744,7 @@ function gtag_report_conversion(url) {
                     <h4><svg class="bi bi-telephone-fill fs-3" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" style="color: rgb(255,147,30);">
                             <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"></path>
                         </svg>&nbsp;<a onclick="return gtag_report_conversion('tel:8598007388');" href="tel:8598007388" style="color: #0d6efd;text-decoration: none;">(859) 800-7388</a></h4>
-                    <p style="font-weight: bold;">Give us a call or fill out the form to get started.</p><img class="img-fluid rounded rr-rounded-feature-image" width="2048" height="1536" src="assets/img/truck.jpg">
+                    <p style="font-weight: bold;">Give us a call or fill out the form to get started.</p><img class="img-fluid rounded rr-rounded-feature-image" src="assets/img/homepage-truck-640.webp" srcset="assets/img/homepage-truck-640.webp 640w, assets/img/homepage-truck-1024.webp 1024w" sizes="(max-width: 991.98px) calc(100vw - 40px), 42vw" width="1024" height="768" loading="lazy" decoding="async" alt="Remedy Roofing service truck">
                 </div>
                 <div class="col-12 col-sm-10 col-md-10 col-lg-7 col-xl-7 col-xxl-7 offset-0 offset-sm-1 offset-md-1 offset-lg-0 offset-xl-0 offset-xxl-0" style="padding: 20px;background: #ffffff;border-radius: 25px;border: 1px dotted var(--bs-secondary) ;">
                     <h2 id="request-inspection" style="font-weight: bold;font-family: Ubuntu, sans-serif;color: #ff931e;">REQUEST YOUR FREE ROOF INSPECTION</h2><form id="contact-form" method="post" action="https://formspree.io/f/mbdnpavn" role="form">
@@ -795,7 +805,7 @@ function gtag_report_conversion(url) {
         </div>
     </section>
     <section>
-        <footer class="text-white bg-dark" style="background: url(&quot;assets/img/wp3718493-black-striped-wallpapers.jpg&quot;) center repeat;border-top: 2px solid #ff931e;">
+        <footer class="text-white bg-dark" style="background: url(&quot;assets/img/homepage-stripe-background.webp&quot;) center / 1920px 1200px repeat;border-top: 2px solid #ff931e;">
             <div class="container py-4 py-lg-5">
                 <div class="rr-footer-top">
                     <div class="rr-footer-card rr-footer-services">
@@ -808,11 +818,11 @@ function gtag_report_conversion(url) {
                         </nav>
                     </div>
                     <div class="rr-footer-card rr-footer-credentials">
-                        <a class="rr-credential-link" href="https://www.bbb.org/us/ky/lexington/profile/roofing-contractors/remedy-roofing-llc-0402-235911837/#sealclick" target="_blank" rel="nofollow noopener"><img class="rr-bbb-badge" src="assets/img/bbb-235911837.png" alt="BBB Accredited Business"></a>
-                        <a class="rr-credential-link" href="Certificate_153548.PDF" target="_blank" rel="noopener"><img src="assets/img/GAFCertificate_153548.png" alt="GAF Certified Residential Roofing Contractor"></a>
+                        <a class="rr-credential-link" href="https://www.bbb.org/us/ky/lexington/profile/roofing-contractors/remedy-roofing-llc-0402-235911837/#sealclick" target="_blank" rel="nofollow noopener"><img class="rr-bbb-badge" src="assets/img/bbb-235911837.png" width="300" height="57" loading="lazy" decoding="async" alt="BBB Accredited Business"></a>
+                        <a class="rr-credential-link" href="Certificate_153548.PDF" target="_blank" rel="noopener"><img src="assets/img/GAFCertificate_153548.png" width="250" height="247" loading="lazy" decoding="async" alt="GAF Certified Residential Roofing Contractor"></a>
                     </div>
                     <div class="rr-footer-card rr-footer-brand">
-                        <img src="assets/img/remedy-roofing-bbb-stacked-logo.png" alt="Remedy Roofing">
+                        <img src="assets/img/remedy-roofing-bbb-stacked-logo.webp" width="320" height="285" loading="lazy" decoding="async" alt="Remedy Roofing">
                         <p>Roofing | Siding | Gutters | Repairs<br>Lexington &amp; Central KY</p>
                     </div>
                 </div>
@@ -844,8 +854,6 @@ function gtag_report_conversion(url) {
         </footer>
     </section>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/script.min.js"></script>
-    <script src="assets/js/aos.min.min.js"></script>
 <script src="assets/js/static-contact.js?v=formspree-2"></script></body>
 
 </html>
