@@ -141,7 +141,16 @@ function gtag_report_conversion(url) {
             white-space: normal !important;
         }
 
+        @media (min-width: 768px) {
+            .rr-home-hero .rr-hero-cta {
+                border-color: #ffffff !important;
+                border-width: 2px !important;
+            }
+        }
+
         .rr-home-hero {
+            --rr-home-split-offset: clamp(18px, 1.4vw, 24px);
+            --rr-home-split-span: clamp(36px, 2.8vw, 48px);
             background: #111111;
             height: clamp(400px, 32vw, 540px);
             isolation: isolate;
@@ -165,15 +174,17 @@ function gtag_report_conversion(url) {
             overflow: hidden;
             position: absolute;
             top: 0;
-            width: 50%;
+            width: calc(50% + var(--rr-home-split-offset));
         }
 
         .rr-home-hero-before {
+            clip-path: polygon(0 0, 100% 0, calc(100% - var(--rr-home-split-span)) 100%, 0 100%);
             left: 0;
         }
 
         .rr-home-hero-after {
-            right: 0;
+            clip-path: polygon(var(--rr-home-split-span) 0, 100% 0, 100% 100%, 0 100%);
+            left: calc(50% - var(--rr-home-split-offset));
         }
 
         .rr-home-hero-panel img {
@@ -270,6 +281,7 @@ function gtag_report_conversion(url) {
             }
 
             .rr-home-hero-panel {
+                clip-path: none;
                 height: 50%;
                 left: 0;
                 width: 100%;
@@ -527,10 +539,12 @@ function gtag_report_conversion(url) {
                 font-family: Bungee, serif !important;
                 font-size: clamp(0.95rem, 4vw, 1.08rem) !important;
                 font-weight: bold !important;
+                height: 36px !important;
                 justify-content: center !important;
                 line-height: 1 !important;
                 margin: 0 !important;
-                padding: 0.55rem 0.5rem !important;
+                min-height: 36px !important;
+                padding: 0 0.5rem !important;
                 white-space: nowrap !important;
             }
 
@@ -550,6 +564,7 @@ function gtag_report_conversion(url) {
                 gap: 4px !important;
                 height: 36px !important;
                 justify-content: center !important;
+                min-height: 36px !important;
                 overflow: hidden !important;
                 padding: 0 !important;
                 width: 40px !important;
