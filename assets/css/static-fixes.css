@@ -485,10 +485,18 @@ body .rr-mobile-phone {
   }
 
   body #navcol-2 {
+    border: 2px solid rgba(255, 147, 30, 0.85) !important;
+    border-radius: 0 0 0.65rem 0.65rem !important;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28) !important;
     height: auto !important;
+    left: auto !important;
     margin: 0 !important;
+    max-height: calc(100dvh - 83px) !important;
+    overflow-x: hidden !important;
     position: fixed !important;
+    right: 12px !important;
     top: 71px !important;
+    width: min(300px, calc(100vw - 24px)) !important;
   }
 
   body #navcol-2.collapsing {
@@ -511,5 +519,14 @@ body .rr-mobile-phone {
 
   body #navcol-2 .navbar-nav > .nav-item.dropdown {
     order: 3 !important;
+  }
+
+  body #navcol-2 .dropdown-menu {
+    min-width: 0 !important;
+    width: 100% !important;
+  }
+
+  body #navcol-2 .dropdown-item {
+    white-space: normal !important;
   }
 }
