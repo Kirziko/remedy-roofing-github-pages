@@ -295,6 +295,62 @@ body > section:first-of-type [data-bss-parallax-bg] .btn {
   }
 }
 
+/*
+  Foldable inner displays sit between traditional phone and desktop widths.
+  Keep the fixed header compact and single-line so it never covers page content.
+*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body .navbar.sticky-top {
+    height: 88px !important;
+    max-height: 88px !important;
+    min-height: 88px !important;
+    overflow: visible !important;
+  }
+
+  body .navbar > .container {
+    flex-wrap: nowrap !important;
+    max-width: 100% !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  body .navbar-brand {
+    flex: 0 1 160px !important;
+    margin-right: 0.55rem !important;
+    min-width: 0 !important;
+  }
+
+  body .navbar-brand img {
+    height: auto !important;
+    max-width: 160px !important;
+    width: 100% !important;
+  }
+
+  body .rr-desktop-phone {
+    flex-shrink: 0 !important;
+    font-size: clamp(1rem, 2.15vw, 1.2rem) !important;
+    line-height: 1 !important;
+    margin-right: 0.55rem !important;
+    padding: 0.5rem 0.65rem !important;
+    white-space: nowrap !important;
+  }
+
+  body #navcol-2 .navbar-nav {
+    flex-shrink: 0 !important;
+  }
+
+  body #navcol-2 .navbar-nav > .nav-item > .nav-link {
+    font-size: clamp(0.95rem, 1.9vw, 1.08rem) !important;
+    padding-left: 0.4rem !important;
+    padding-right: 0.4rem !important;
+    white-space: nowrap !important;
+  }
+
+  body > section:first-of-type .col-md-12.offset-sm-1 {
+    margin-left: 0 !important;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .rr-slide-right {
     animation: none;
@@ -465,7 +521,16 @@ body .rr-mobile-phone {
   body .rr-mobile-phone,
   body .rr-mobile-nav-toggle {
     align-self: flex-end !important;
+    box-sizing: border-box !important;
+    height: 36px !important;
     margin-bottom: 0 !important;
+    min-height: 36px !important;
+  }
+
+  body .rr-mobile-phone {
+    line-height: 1 !important;
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
   }
 
   body .rr-mobile-phone,
