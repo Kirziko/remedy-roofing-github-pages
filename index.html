@@ -81,7 +81,7 @@ function gtag_report_conversion(url) {
     <link rel="shortcut icon" href="favicon.ico?v=circle-logo-1">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
-    <link rel="stylesheet" href="assets/css/static-fixes.css?v=menu-scroll-lock-1">
+    <link rel="stylesheet" href="assets/css/static-fixes.css?v=foldable-1">
     <style>
         body > section:first-of-type [data-bss-parallax-bg] .container,
         body > section:first-of-type [data-bss-parallax-bg] .row {
@@ -350,6 +350,58 @@ function gtag_report_conversion(url) {
                 font-size: 0.9rem;
                 margin: 0.75rem 0 0;
                 order: 2;
+            }
+        }
+
+        @media (max-width: 767.98px) and (max-height: 500px) and (orientation: landscape) {
+            .rr-home-hero {
+                height: calc(100svh - 71px);
+                min-height: 360px;
+            }
+
+            .rr-home-hero-panel {
+                height: 100%;
+                top: 0;
+                width: calc(50% + var(--rr-home-split-offset));
+            }
+
+            .rr-home-hero-before {
+                clip-path: polygon(0 0, 100% 0, calc(100% - var(--rr-home-split-span)) 100%, 0 100%);
+                left: 0;
+            }
+
+            .rr-home-hero-after {
+                bottom: auto;
+                clip-path: polygon(var(--rr-home-split-span) 0, 100% 0, 100% 100%, 0 100%);
+                left: calc(50% - var(--rr-home-split-offset));
+                right: auto;
+                top: 0;
+            }
+
+            .rr-home-hero-divider {
+                bottom: -2%;
+                height: auto;
+                left: 50%;
+                right: auto;
+                top: -2%;
+                transform: translateX(-50%) skewX(-5deg);
+                width: 5px;
+            }
+
+            .rr-home-hero-after .rr-home-hero-label {
+                bottom: auto;
+                left: auto;
+                right: 0.8rem;
+                top: 0.8rem;
+            }
+
+            .rr-home-hero .rr-hero-cta {
+                font-size: 1rem !important;
+                padding: 0.7rem 0.9rem !important;
+            }
+
+            .rr-home-hero-title {
+                margin-top: 0.55rem;
             }
         }
 
