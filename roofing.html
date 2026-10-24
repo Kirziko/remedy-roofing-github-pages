@@ -379,6 +379,57 @@ function gtag_report_conversion(url) {
         @media (max-width: 767.98px) {
             body { padding-top: 71px !important; }
 
+            .rr-roofing-hero-row {
+                display: grid !important;
+                grid-template-columns: minmax(0, 1fr) !important;
+            }
+
+            .rr-roofing-hero-copy {
+                display: contents !important;
+            }
+
+            .rr-roofing-hero-copy > * {
+                grid-column: 1 !important;
+                margin-left: 12px !important;
+                margin-right: 24px !important;
+                min-width: 0 !important;
+            }
+
+            .rr-roofing-hero-copy > h1:first-child {
+                order: 1 !important;
+            }
+
+            .rr-roofing-hero-media {
+                grid-column: 1 !important;
+                margin: 0 0 1rem !important;
+                max-width: 100% !important;
+                order: 2 !important;
+                width: 100% !important;
+            }
+
+            .rr-roofing-service-area {
+                order: 3 !important;
+            }
+
+            .rr-roofing-hero-copy > .lead {
+                order: 4 !important;
+            }
+
+            .rr-roofing-hero-copy > .rr-proof-list {
+                margin-left: 12px !important;
+                margin-right: 24px !important;
+                order: 5 !important;
+            }
+
+            .rr-roofing-hero-copy > .rr-mobile-inspection-cta {
+                justify-self: start !important;
+                order: 6 !important;
+            }
+
+            .rr-roofing-hero-copy > p:last-child {
+                order: 7 !important;
+            }
+
             .navbar.sticky-top {
                 position: fixed !important;
             }
@@ -753,7 +804,7 @@ function gtag_report_conversion(url) {
         <div class="container-fluid" style="padding-right: 0px;">
             <div class="row rr-roofing-hero-row" style="margin-top: 0px;margin-right: 0px;margin-bottom: 0px;">
                 <div class="col-sm-10 col-md-6 col-lg-6 col-xl-5 col-xxl-5 offset-sm-1 offset-md-1 offset-lg-1 offset-xl-1 offset-xxl-1 align-self-center rr-roofing-hero-copy" style="background: #ffffff;padding: 12px;padding-left: 12px;">
-                    <h1 style="font-weight: bold;font-size: 2.5rem;">Roof Repair &amp; Replacement in Lexington Kentucky</h1>
+                    <h1 style="font-weight: bold;font-size: 2.5rem;">Roof Repair &amp; Replacement in Lexington KY</h1>
                     <p class="rr-roofing-service-area">Serving Lexington and surrounding communities throughout Central Kentucky</p>
                     <p class="lead">Free roof inspections from a trusted local roofing company.</p>
                     <h1 class="rr-proof-list" style="font-weight: bold;font-size: 18px;text-align: left;"><span class="rr-proof-item"><svg class="bi bi-star-fill" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" style="color: rgb(255,147,30);">
