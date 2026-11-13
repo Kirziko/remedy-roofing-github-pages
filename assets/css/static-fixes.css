@@ -351,6 +351,12 @@ body > section:first-of-type [data-bss-parallax-bg] .btn {
     white-space: nowrap !important;
   }
 
+  body #navcol-2 .nav-item.dropdown .dropdown-menu {
+    max-height: calc(100dvh - 88px) !important;
+    overflow-y: auto !important;
+    overscroll-behavior: contain !important;
+  }
+
   body > section:first-of-type .col-md-12.offset-sm-1 {
     margin-left: 0 !important;
   }
