@@ -3,6 +3,7 @@
 
   var cards = Array.prototype.slice.call(document.querySelectorAll(".rr-color-card"));
   var preview = document.getElementById("rr-shingle-preview");
+  var previewPanel = document.querySelector(".rr-color-preview");
   var selectedName = document.getElementById("rr-selected-name");
   var selectedDescription = document.getElementById("rr-selected-description");
   var sunlight = document.getElementById("rr-sunlight");
@@ -41,6 +42,12 @@
   cards.forEach(function (card) {
     card.addEventListener("click", function () {
       setColor(card, true);
+
+      if (previewPanel) {
+        window.requestAnimationFrame(function () {
+          previewPanel.scrollIntoView({ behavior: "instant", block: "start" });
+        });
+      }
     });
   });
 
