@@ -145,6 +145,7 @@
   color: #ffffff;
   overflow: hidden;
   position: sticky;
+  scroll-margin-top: 112px;
   top: 112px;
 }
 
@@ -442,6 +443,7 @@
 
   .rr-color-preview {
     position: static;
+    scroll-margin-top: 100px;
   }
 
   .rr-feature-grid {
@@ -450,6 +452,10 @@
 }
 
 @media (max-width: 767.98px) {
+  .rr-color-preview {
+    scroll-margin-top: 83px;
+  }
+
   .rr-shingle-hero {
     padding: 2.75rem 0 3rem;
   }
