@@ -6,7 +6,6 @@
   var selectedName = document.getElementById("rr-selected-name");
   var selectedDescription = document.getElementById("rr-selected-description");
   var sunlight = document.getElementById("rr-sunlight");
-  var sunlightValue = document.getElementById("rr-sunlight-value");
   var status = document.getElementById("rr-shingle-status");
 
   if (!cards.length || !preview || !selectedName || !selectedDescription) {
@@ -50,9 +49,6 @@
       var percent = Number(sunlight.value);
       preview.style.setProperty("--rr-brightness", String(percent / 100));
       sunlight.setAttribute("aria-valuetext", percent + "% simulated sunlight");
-      if (sunlightValue) {
-        sunlightValue.textContent = percent + "%";
-      }
     });
   }
 
