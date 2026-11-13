@@ -80,7 +80,7 @@
                 <p class="lead">Explore all 15 available colors, compare their blends up close, and adjust the sunlight preview before choosing samples for your Lexington or Central Kentucky home.</p>
                 <div class="rr-shingle-actions">
                     <a class="btn btn-primary" href="#colors">View All 15 Colors</a>
-                    <a class="btn rr-btn-outline-light" href="roofing.html#request-inspection">Request a Free Roof Inspection</a>
+                    <a class="btn rr-btn-outline-light" href="#request-inspection">Request a Free Roof Inspection</a>
                 </div>
             </div>
         </section>
@@ -163,17 +163,76 @@
             </div>
         </section>
 
-        <section class="rr-section rr-shingle-cta">
+    </main>
+
+    <hr id="rr-inspection-divider" style="border-color: #ff931e;">
+        <section style="margin-bottom: 12px;">
             <div class="container">
-                <div class="rr-shingle-cta-inner">
-                    <h2>See Your Favorites in Person</h2>
-                    <p>Remedy Roofing can help you narrow the choices, review physical samples, and choose a shingle color that works with your home’s brick, siding and surroundings.</p>
-                    <a class="btn" href="roofing.html#request-inspection">Request a Free Roof Inspection</a>
-                    <a class="btn" onclick="return gtag_report_conversion('tel:8598007388');" href="tel:8598007388">Call (859) 800-7388</a>
+                <div class="row">
+                    <div class="col-12 col-sm-10 col-md-10 col-lg-3 col-xl-5 col-xxl-5 offset-0 offset-sm-1 offset-md-1 offset-lg-1 offset-xl-0 offset-xxl-0" style="padding: 20px;background: #ffffff;">
+                        <h2 style="font-weight: bold;font-family: Ubuntu, sans-serif;color: #ff931e;">Ready For a Better Roof?</h2>
+                        <p class="lead" style="font-weight: bold;">Get Your Free Inspection Today!</p>
+                        <h4><svg class="bi bi-telephone-fill fs-3" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" style="color: rgb(255,147,30);">
+                                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"></path>
+                            </svg>&nbsp;<a onclick="return gtag_report_conversion('tel:8598007388');" href="tel:8598007388" style="color: #0d6efd;text-decoration: none;">(859) 800-7388</a></h4>
+                        <p style="font-weight: bold;">Give us a call or fill out the form to get started.</p><img class="img-fluid rounded rr-rounded-feature-image" width="900" height="675" src="assets/img/truck-optimized.webp" loading="lazy" decoding="async" alt="Remedy Roofing work truck">
+                    </div>
+                    <div class="col-12 col-sm-10 col-md-10 col-lg-7 col-xl-7 col-xxl-7 offset-0 offset-sm-1 offset-md-1 offset-lg-0 offset-xl-0 offset-xxl-0" style="padding: 20px;background: #ffffff;border-radius: 25px;border: 1px dotted var(--bs-secondary) ;">
+                        <h2 id="request-inspection" style="font-weight: bold;font-family: Ubuntu, sans-serif;color: #ff931e;">REQUEST YOUR FREE ROOF INSPECTION</h2>
+                        <form id="contact-form" method="post" action="https://formspree.io/f/mbdnpavn" role="form">
+                            <div class="messages"></div>
+                            <div class="controls">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_name">Name*</label>
+                                            <input id="form_name" type="text" name="name" class="form-control" placeholder="" required="required" data-error="Name is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_email">Email*</label>
+                                            <input id="form_email" type="email" name="email" class="form-control" placeholder="" required="required" data-error="Valid email is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_phone">Phone</label>
+                                            <input id="form_phone" type="text" name="phone" class="form-control" placeholder="">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="form_message">Message*</label>
+                                            <textarea id="form_message" name="message" class="form-control" placeholder="Tell us about your roof." rows="4" required="required" onpaste="return false" data-error="Please, leave us a message."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <br>
+                                        <input type="submit" value="Submit Free Inspection Form">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p class="text-muted"><strong>*</strong><small>These fields are required.</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
-    </main>
 
     <section>
         <footer class="text-white bg-dark" style="background: url(&quot;assets/img/wp3718493-black-striped-wallpapers.webp&quot;) center repeat;border-top: 2px solid #ff931e;">
@@ -228,6 +287,7 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/mobile-menu-scroll-lock.js?v=1"></script>
     <script src="assets/js/shingle-colors.js?v=2"></script>
+    <script src="assets/js/static-contact.js?v=formspree-2"></script>
 </body>
 
 </html>
