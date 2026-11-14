@@ -3,6 +3,7 @@
 
   var cards = Array.prototype.slice.call(document.querySelectorAll(".rr-color-card"));
   var preview = document.getElementById("rr-shingle-preview");
+  var previewSource = document.getElementById("rr-shingle-preview-source");
   var previewPanel = document.querySelector(".rr-color-preview");
   var selectedName = document.getElementById("rr-selected-name");
   var selectedDescription = document.getElementById("rr-selected-description");
@@ -19,6 +20,9 @@
     });
 
     preview.style.opacity = "0.55";
+    if (previewSource) {
+      previewSource.srcset = card.getAttribute("data-preview-avif");
+    }
     preview.src = card.getAttribute("data-preview");
     preview.alt = card.getAttribute("data-name") + " Owens Corning Duration shingle swatch";
     selectedName.textContent = card.getAttribute("data-name");
